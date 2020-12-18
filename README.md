@@ -1,5 +1,6 @@
 # Mehrheitsfähige Koalitionen im Nationalrat
-Zum Abschluss der 50. Legislatur hat das Tamedia-Datenteam für die Sonntagszeitung eine Analyse durchgeführt, um die Mehrheitsverhältnisse im Nationalrat des Schweizer Parlaments zu untersuchen. Grundlage waren alle Abstimmungen im Nationalrat in der Legislatur 49 und 50 (bis und mit Sommersession 2019). Für die Koalitionsanalyse wurde nur die Untergruppe der als Schlus- und Gesamtabstimmungen kategorisierten Abstimmungen gesondert betrachtet.  
+Mit den Wahlen für die 51 Legislatur hat sich sowohl der Anteil der Links-grüner Parteien, als auch der Frauenanteil in allen Parteien deutlich erhöht.
+Das Ziel dieser Analyse ist es nun, die Auswirkungen dieser Veränderungen zu erkennen. Grundlage dafür waren alle Abstimmungen im Nationalrat in der Legislatur 50 und 51 (bis 18.12.2020).
 
 Die Analyse besteht aus drei Teilen:
 
@@ -32,7 +33,7 @@ Die Resultate beider Anfragen werden als .csv Datei pro betrachteter Legislatur 
 
 Die Dateien votes_XX.csv aus dem vorhergehenden Schritt werden eingelesen und weiter aufbereitet.
 
-Es wurde untersucht, in welchen Koalitionen Mehrheitsverhältnisse zustande kamen.
+Es wurde untersucht, in welchen Koalitionen Mehrheitsverhältnisse zustande kamen. Alle Analysen wurden sowohl mit allen Abstimmungen gemacht, als auch nur mit den Schluss- und Gesamtabstimmungen.
 
 Damit eine Mehrheit einer bestimmten Koalition zugeordnet werden kann, wurde folgendes Kriterium angewendet: Die Koalitionspartner müssen jeweils mit mindestens 66% der anwesenden Fraktionsmitglieder zur Mehrheit beitragen. Die Koalitionsgegner dürfen zu höchstens 40% zur Mehrheit beitragen. Weitere Fraktionen, die nicht explizit Koalitionspartner oder oder Koalitionsgegner sind, dürfen mit 40% - 66 % zur Mehrheit beitragen.
 
@@ -77,3 +78,9 @@ Alle untersuchten Koalitions-Kombination wurden zu den untenstehenden 7 Koalitio
   GLP und Grüne mit min. 40% der Fraktionsstimmen
 
 Weitere Koalitionen wie “Unheilige Allianzen” (SVP + SP), “Progressive Allianzen” (SP + FDP + Grüne + GLP) oder “Alle gegen die FDP” wurden ebenfalls untersucht, kommen jedoch nur sehr selten vor. Sie werden zusammen mit den nicht Kategorisierten Abstimmungen unter “Übrige Mehrheiten” zusammengefasst.
+
+
+
+## 3. Zusammenfassen der Koalitionen und Darstellung
+
+--> [(GoogleSheet)](https://docs.google.com/spreadsheets/d/1DUT3gIYoZhuRYYhOSLtZ-6Gr6nIuJQsc37o8aPXWKmU/edit?usp=sharing)

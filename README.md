@@ -60,9 +60,9 @@ Alle untersuchten Koalitions-Kombination wurden zu den untenstehenden 7 Koalitio
   SP, Grüne und SVP max. 40% der Fraktionstimmen
 
 **Mitte Rechts:**   
-  SVP oder SVP und FDP min. 66% der Fraktionstimmen   
-  Mindestens eine der Mitteparteien (Mitte, GLP) mit min. 66% der Fraktionstimmen   
-  SP und Grüne max. 40% der Fraktionstimmen
+  *SVP oder SVP und FDP min. 66% der Fraktionstimmen   
+  *Mindestens eine der Mitteparteien (Mitte, GLP) mit min. 66% der Fraktionstimmen   
+  *SP und Grüne max. 40% der Fraktionstimmen  
 
 **Rechts:**   
   SVP oder SVP und FDP min. 66% der Fraktionstimmen 

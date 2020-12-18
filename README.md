@@ -45,34 +45,34 @@ Eine Fraktion wird als Teil einer Koalition gesehen, wenn sie mit mindestens 66%
 
 Alle untersuchten Koalitions-Kombination wurden zu den untenstehenden 7 Koalitionen zusammengefasst. Eine genau Auflistung und Definition aller 35 definierten Koalitionen finden sich im GoogleSheet [(3_Resultate_Koalitionen)](https://docs.google.com/spreadsheets/d/1DUT3gIYoZhuRYYhOSLtZ-6Gr6nIuJQsc37o8aPXWKmU/edit?usp=sharing)
 
-**Links:**
+**Links:**   
   SP oder SP und Grüne min. 66% der Fraktionstimmen   
   SVP und FDP max. 40% der Fraktionstimmen
   Mitteparteien weniger als 66% der Fraktionsstimmen
 
-**Mitte-Links:**
+**Mitte-Links:**   
   SP oder Grüne min. 66% der Fraktionstimmen   
   SVP und FDP max. 40% der Fraktionstimmen
   Mindestens eine Mittepartei (Mitte, GLP) mehr als 66%
   
-**Mitte:**
+**Mitte:**   
   Mindestens zwei der Mitteparteien (Mitte, FDP, GLP) mit min. 66% der Fraktionstimmen   
   SP, Grüne und SVP max. 40% der Fraktionstimmen
 
-**Mitte Rechts:**
+**Mitte Rechts:**   
   SVP oder SVP und FDP min. 66% der Fraktionstimmen   
   Mindestens eine der Mitteparteien (Mitte, GLP) mit min. 66% der Fraktionstimmen   
   SP und Grüne max. 40% der Fraktionstimmen
 
-**Rechts:**
+**Rechts:**   
   SVP oder SVP und FDP min. 66% der Fraktionstimmen 
   SP und Grüne max. 40% der Fraktionstimmen
 
-**Grosse Koalitionen**:
+**Grosse Koalitionen:**   
   Mindestens alle Bundesratsparteien mit min. 66% der Fraktionstimmen 
   Alle anderen mit nicht weniger 40% der Fraktionstimmen
 
-**Alle gegen die SVP:**
+**Alle gegen die SVP:**   
   SVP mit max. 40% der Fraktionstimmen
   Die anderen Bundesratsparteien mit min. 66% der Fraktionsstimmen
   GLP und Grüne mit min. 40% der Fraktionsstimmen

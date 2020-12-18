@@ -40,22 +40,40 @@ Insgesamt wurden 35 verschiedene Kombinationen definiert, die anschliessend zu d
 
 Es wurden auch Mehrheiten berücksichtigt, welche zu einer Ablehnung einer Vorlage geführt haben. Die Analyse wurde wiederum getrennt für alle Abstimmungen, sowie nur für die Schluss- und Gesamtabstimmungen gemacht.
 
-Die untersuchten Koalitionen haben wir folgendermassen definiert:
+Eine Fraktion wird als Teil einer Koalition gesehen, wenn sie mit mindestens 66% der Fraktionsstimmen an der Mehrheit beteiligt ist. Im Gegenzug wird Sie als Koalitionsgegner gesehen, wenn sie mit weniger als 40% der Fraktionsstimmen an der Mehrheit beteiligt ist.
 
-**Links:** SP oder SP und Grüne sind zu mindestens 66% an der Mehrheit beteiligt. SVP und FDP sind zu höchstens 40% beteiligt.
+Alle untersuchten Koalitions-Kombination wurden zu den untenstehenden 7 Koalitionen zusammengefasst. Eine genau Auflistung und Definition aller 35 definierten Koalitionen finden sich im GoogleSheet [(3_Resultate_Koalitionen)](https://docs.google.com/spreadsheets/d/1DUT3gIYoZhuRYYhOSLtZ-6Gr6nIuJQsc37o8aPXWKmU/edit?usp=sharing)
 
-**Mitte-Links:** SP oder Grüne sind zu mindestens 66% an der Mehrheit beteiligt, SVP und FDP zu höchstens 40%.
+**Links:**
+  SP oder SP und Grüne min. 66% der Fraktionstimmen   
+  SVP und FDP max. 40% der Fraktionstimmen
+  Mitteparteien weniger als 66% der Fraktionsstimmen
 
-**Mitte:** Mindestens zwei der Mitteparteien (Mitte, FDP, GLP) sind mit mehr als 66% an der Mehrheit beteiligt. SP, Grüne und SVP zu höchstens 40%.
+**Mitte-Links:**
+  SP oder Grüne min. 66% der Fraktionstimmen   
+  SVP und FDP max. 40% der Fraktionstimmen
+  Mindestens eine Mittepartei (Mitte, GLP) mehr als 66%
+  
+**Mitte:**
+  Mindestens zwei der Mitteparteien (Mitte, FDP, GLP) mit min. 66% der Fraktionstimmen   
+  SP, Grüne und SVP max. 40% der Fraktionstimmen
 
-**Mitte Rechts:** SVP oder SVP und FDP, sowie mindestens eine Mitte-Partei (Mitte, GLP) sind zu mindestens 66% an der Mehrheit beteiligt. SP und Grüne zu höchstens 40%.
+**Mitte Rechts:**
+  SVP oder SVP und FDP min. 66% der Fraktionstimmen   
+  Mindestens eine der Mitteparteien (Mitte, GLP) mit min. 66% der Fraktionstimmen   
+  SP und Grüne max. 40% der Fraktionstimmen
 
-**Rechts:** SVP oder SVP und FDP sind zu mindestens 66% an der Mehrheit beteiligt. SP und Grüne zu höchstens 40%.
+**Rechts:**
+  SVP oder SVP und FDP min. 66% der Fraktionstimmen 
+  SP und Grüne max. 40% der Fraktionstimmen
 
-**Grosse Koalitionen**: Mindestens alle Bundesratsparteien sind zu 66% dabei, alle anderen sind nicht mit weniger als 40% dabei.
+**Grosse Koalitionen**:
+  Mindestens alle Bundesratsparteien mit min. 66% der Fraktionstimmen 
+  Alle anderen mit nicht weniger 40% der Fraktionstimmen
 
-**Alle gegen die SVP:** Die SVP ist mit weniger als 40% dabei, die anderen Bundesratsparteien sind zu mindestens 66% dabei. GLP und Grüne sind mit mindestens 40% an der Mehrheit beteiligt.
+**Alle gegen die SVP:**
+  SVP mit max. 40% der Fraktionstimmen
+  Die anderen Bundesratsparteien mit min. 66% der Fraktionsstimmen
+  GLP und Grüne mit min. 40% der Fraktionsstimmen
 
 Weitere Koalitionen wie “Unheilige Allianzen” (SVP + SP), “Progressive Allianzen” (SP + FDP + Grüne + GLP) oder “Alle gegen die FDP” wurden ebenfalls untersucht, kommen jedoch nur sehr selten vor. Sie werden zusammen mit den nicht Kategorisierten Abstimmungen unter “Übrige Mehrheiten” zusammengefasst.
-
-Es wurde darauf geachtet, dass sich die Koalitionen nicht überschneiden, es fällt also jede Abstimmung nur unter eine Koalition. Die genaue Definition der Koalitionen finden sich im GoogleSheet.

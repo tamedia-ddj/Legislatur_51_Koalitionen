@@ -13,7 +13,7 @@ Es wurden Daten aus der offiziellen API des Schweizer Parlaments verwendet (http
 Die Erkenntnisse aus der Analyse werden am XX.12.2020 [in der Sonntagszeitung publiziert](https://www.tagesanzeiger.ch/sonntagszeitung "Artikel in der Sonntagszeitung").
 
 ## 1. Abfrage der Daten aus der API
---> R-Script "1_Request_API_.R"
+--> R-Script [1_Request_API_.R](1_Request_API_.R)
 
 In einer ersten Abfrage wurde die Liste aller Abstimmungen im Nationalrat der betrachteten Legislaturperioden (50 & 51) von der API angefragt.
 (--> https://ws.parlament.ch/odata.svc/Vote)
@@ -29,7 +29,7 @@ Die Resultate beider Anfragen werden als .csv Datei pro betrachteter Legislatur 
 - votes_50_alle.csv / votes_51_alle.csv  (--> Liste mit Voten von allen Parlamentariern zu allen Abstimmungen) --> Zipfile aus Platzgründen
 
 ## 2. Analyse der Koalitionen
---> R-Script "2_Analyse.R"
+--> R-Script [2_Analyse.R](2_Analyse.R)
 
 Die Dateien votes_XX.csv aus dem vorhergehenden Schritt werden eingelesen und weiter aufbereitet.
 

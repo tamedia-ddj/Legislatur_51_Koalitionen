@@ -28,10 +28,12 @@ Die Resultate beider Anfragen werden als .csv Datei pro betrachteter Legislatur 
 - votes_50.csv / votes_51.csv  (--> Liste mit Voten von allen Parlamentariern zu Schluss- und Gesamtabstimmungen) --> Zipfile aus Platzgründen
 - votes_50_alle.csv / votes_51_alle.csv  (--> Liste mit Voten von allen Parlamentariern zu allen Abstimmungen) --> Zipfile aus Platzgründen
 
+Aus platzgründen sind diese csv files als Zip-Archiv hier hochgeladen.
+
 ## 2. Analyse der Koalitionen
 --> R-Script [2_Analyse.R](2_Analyse.R)
 
-Die Dateien votes_XX.csv aus dem vorhergehenden Schritt werden eingelesen und weiter aufbereitet.
+Die Dateien votes_XX.csv aus dem vorhergehenden Schritt werden eingelesen und weiter aufbereitet. (Dieses Script kann ausgeführt werden, ohnde das vorhergehende Request-API script auszuführen, da alle relevanten Daten in diesem Github repo enthalten sind (im Zip-Archiv).
 
 Es wurde untersucht, in welchen Koalitionen Mehrheitsverhältnisse zustande kamen. Alle Analysen wurden sowohl mit allen Abstimmungen gemacht, als auch nur mit den Schluss- und Gesamtabstimmungen.
 

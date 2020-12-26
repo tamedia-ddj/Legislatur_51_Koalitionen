@@ -1,18 +1,16 @@
 library(tidyverse)
 
 ## Set working directory ####
-setwd("WORKINGDIRECTORY")
+setwd("D:/Tamedia/GSync/Datenteam/Projekte/202012_Koalitionsanalyse_2020/")
 getwd()
 
 
-## Data einlesen ####
+## Daten einlesen ####
 
 ## Nur Schlussabstimmungen
-df_Ids_49 <- read_csv("Data_output/Ids_49.csv")
 df_Ids_50 <- read_csv("Data_output/Ids_50.csv")
 df_Ids_51 <- read_csv("Data_output/Ids_51.csv")
 
-df_votes_49 <- read_csv("Data_output/Votes_49.csv")
 df_votes_50 <- read_csv("Data_output/Votes_50.csv")
 df_votes_51 <- read_csv("Data_output/Votes_51.csv")
 
@@ -23,16 +21,10 @@ df_Ids_51_alle <- read_csv("Data_output/Ids_51_alle.csv")
 df_votes_50_alle <- read_csv("Data_output/Votes_50_alle.csv")
 df_votes_51_alle <- read_csv("Data_output/Votes_51_alle.csv")
 
-## Get Info von Politiker
-lkp_parties <- unique(rbind(df_votes_49, df_votes_50, df_votes_51)[, c("PersonNumber", "ParlGroupName")])
-df_parls <- read_csv("Data_output/alle_parlamentarier.csv") %>% left_join(lkp_parties, by = "PersonNumber")
-
-
 ## Daten Aufbereiten ####
 
 ## Eindeutiger Name
-# Carefull, Daniel Frei changed party
-df_votes_49$FullName <- str_c(df_votes_49$FirstName, " ", df_votes_49$LastName)
+# Carefull, Daniel Frei changed party --> Nicht relevant in 51
 df_votes_50$FullName <- str_c(df_votes_50$FirstName, " ", df_votes_50$LastName)
 df_votes_51$FullName <- str_c(df_votes_51$FirstName, " ", df_votes_51$LastName)
 df_votes_50_alle$FullName <- str_c(df_votes_50_alle$FirstName, " ", df_votes_50_alle$LastName)
@@ -47,16 +39,6 @@ df_votes_51 <- df_votes_51 %>% filter(Subject != "Motion d'ordre Dettling: rép�
 
 
 ## Einheitliche Fraktionsnamen festlegen
-table(df_votes_49$ParlGroupName)
-df_votes_49$ParlGroupName <- df_votes_49$ParlGroupName %>%
-                                          str_replace("Fraktion CVP-EVP", "Mitte") %>% 
-                                          str_replace("Fraktion der Schweizerischen Volkspartei", "SVP") %>% 
-                                          str_replace("Sozialdemokratische Fraktion", "SP") %>% 
-                                          str_replace("FDP-Liberale Fraktion", "FDP") %>% 
-                                          str_replace("Grüne Fraktion", "Gruene") %>% 
-                                          str_replace("Fraktion BD", "Mitte") %>% 
-                                          str_replace("Grünliberale Fraktion", "GLP") %>% 
-                                          str_replace("Fraktionslos", "andere")
 
 table(df_votes_50$ParlGroupName)
 df_votes_50$ParlGroupName <- df_votes_50$ParlGroupName %>%
@@ -454,7 +436,7 @@ get_koalitionen_det <- function(res_frakt_wide, lim_oben, lim_unten){
 ## Resultate Koalitionen ####
 # Welche Grenzen werden für die Abgrenzung der Koalitionen vwerndet?
 lim_oben <- 0.66 # mindestens lim_oben um zu einer Koalition dazuzugehören
-lim_unten <- 0.4 
+lim_unten <- 0.4 # höchstens lim_unten um als Gegener der Koalition zu gelten
 
 
 #### Schlussabstimmungen
@@ -533,10 +515,10 @@ res_koalitionen_495010_alle_det %>% write.table("clipboard", sep="\t", row.names
 
 
 
-## Erfolg der Koalitionen ####
-## Achtung, hier wird "anteil_ja" anders definiert als oben, und zwar Gleich wie 
-## um den Erfolg einer Abstimmugn zu beurteilen: anteil_ja = ja/valid
-## (und nich anteil_ja = ja/anwesend)
+## Erfolg der Fraktionen ####
+# Achtung, hier wird "anteil_ja" anders definiert als oben, und zwar Gleich wie 
+# um den Erfolg einer Abstimmung zu beurteilen: anteil_ja = ja/valid
+# (und nich anteil_ja = ja/anwesend)
 
 erfolg_fraktionen <- function(df_votes){
   
@@ -599,6 +581,13 @@ erfolg_fraktionen_alle_comb %>% write.table("Data_output/erfolg_fraktionen_alle.
 
 ## Erfolg der Parlamentarier ####
 
+
+## Get Info von Politiker
+# Achtung, Daniel Frei hat die Partei gewechselt, bei 51 ist das aber kein Problem, weil er nicht mehr dabei ist.
+
+df_parls <- unique(rbind(df_votes_51)[, c("PersonNumber", "ParlGroupName")]) %>% 
+  left_join(read_csv("Data_output/alle_parlamentarier.csv"), by = "PersonNumber")
+
 erfolg_parl <- function(df_votes){
     
   ## Welche Abstimmungne wurden angenommen?
@@ -638,19 +627,5 @@ erfolg_parl <- function(df_votes){
   return(erfolg_parl)
 }
 
-erfolg_parl_50 <- erfolg_parl(df_votes_50)
 erfolg_parl_51 <- erfolg_parl(df_votes_51)
-
-erfolg_parl_comb <- df_parls %>% left_join(erfolg_parl_50[, c("PersonNumber","Anzahl_erfolge", "Anzahl_anwesend", "erfolg_proc")],
-                                           by = "PersonNumber") %>% 
-                                 rename(c("Anzahl_anwesend_50" = "Anzahl_anwesend", "Anzahl_erfolge_50" = "Anzahl_erfolge", "erfolg_proc_50" = "erfolg_proc")) %>%
-                                 left_join(erfolg_parl_51[, c("PersonNumber","Anzahl_erfolge", "Anzahl_anwesend", "erfolg_proc")],
-                                           by = "PersonNumber") %>% 
-                                 rename(c("Anzahl_anwesend_51" = "Anzahl_anwesend", "Anzahl_erfolge_51" = "Anzahl_erfolge", "erfolg_proc_51" = "erfolg_proc")) %>% 
-                                 mutate(FullName = str_c(FirstName, " ", LastName))
-
-erfolg_parl_comb %>% write_delim("Data_output/erfolg_parlamentarier.csv", delim = ",")
-
-
-
-
+erfolg_parl_51 %>% write_delim("Data_output/erfolg_parlamentarier_51.csv", delim = ",")

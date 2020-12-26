@@ -1,6 +1,6 @@
 # Mehrheitsfähige Koalitionen im Nationalrat
 Mit den Wahlen für die 51 Legislatur hat sich sowohl der Anteil der Links-grüner Parteien, als auch der Frauenanteil in allen Parteien deutlich erhöht.
-Das Ziel dieser Analyse ist es nun, die Auswirkungen dieser Veränderungen zu erkennen. Grundlage dafür waren alle Abstimmungen im Nationalrat in der Legislatur 50 und 51 (bis 18.12.2020), welche über dei [offizielle API des Schweizer Parlamants](https://pragmatiqa.com/xodata/odatadir.html) verfügbar sind.
+Das Ziel dieser Analyse ist es nun, die Auswirkungen dieser Veränderungen zu erkennen. Grundlage dafür waren alle Abstimmungen im Nationalrat in der Legislatur 50 und 51 (bis 18.12.2020), welche über die [offizielle API des Schweizer Parlamants](https://pragmatiqa.com/xodata/odatadir.html) verfügbar sind.
 
 Die Analyse besteht aus drei Teilen:
 

@@ -10,7 +10,7 @@ Die Analyse besteht aus drei Teilen:
 
 Es wurden Daten aus der offiziellen API des Schweizer Parlaments verwendet (https://ws.parlament.ch/odata.svc).
 
-Die Erkenntnisse aus der Analyse werden am XX.12.2020 [in der Sonntagszeitung publiziert](https://www.tagesanzeiger.ch/sonntagszeitung "Artikel in der Sonntagszeitung").
+Die Erkenntnisse aus der Analyse werden am 27.12.2020 [in der Sonntagszeitung publiziert](https://www.tagesanzeiger.ch/sonntagszeitung "Artikel in der Sonntagszeitung") publiziert.
 
 ## 1. Abfrage der Daten aus der API
 --> R-Script [1_Request_API_.R](1_Request_API_.R)
@@ -45,7 +45,7 @@ Es wurden auch Mehrheiten berücksichtigt, welche zu einer Ablehnung einer Vorla
 
 Eine Fraktion wird als Teil einer Koalition gesehen, wenn sie mit mindestens 66% der Fraktionsstimmen an der Mehrheit beteiligt ist. Im Gegenzug wird Sie als Koalitionsgegner gesehen, wenn sie mit weniger als 40% der Fraktionsstimmen an der Mehrheit beteiligt ist.
 
-Alle untersuchten Koalitions-Kombination wurden zu den untenstehenden 7 Koalitionen zusammengefasst. Eine genau Auflistung und Definition aller 35 definierten Koalitionen finden sich im GoogleSheet [(3_Resultate_Koalitionen)](https://docs.google.com/spreadsheets/d/1DUT3gIYoZhuRYYhOSLtZ-6Gr6nIuJQsc37o8aPXWKmU/edit?usp=sharing)
+Alle untersuchten Koalitions-Kombination wurden zu den untenstehenden 7 Koalitionen zusammengefasst. Eine genau Auflistung und Definition aller 35 definierten Koalitionen finden sich im GoogleSheet [(3_Resultate_Koalitionen)](https://docs.google.com/spreadsheets/d/1DUT3gIYoZhuRYYhOSLtZ-6Gr6nIuJQsc37o8aPXWKmU/edit?usp=sharing), bzw. natürlich im R-Code.
 
 **Links:**   
   SP oder SP und Grüne min. 66% der Fraktionstimmen   
@@ -79,7 +79,7 @@ Alle untersuchten Koalitions-Kombination wurden zu den untenstehenden 7 Koalitio
   Die anderen Bundesratsparteien mit min. 66% der Fraktionsstimmen
   GLP und Grüne mit min. 40% der Fraktionsstimmen
 
-Weitere Koalitionen wie “Unheilige Allianzen” (SVP + SP), “Progressive Allianzen” (SP + FDP + Grüne + GLP) oder “Alle gegen die FDP” wurden ebenfalls untersucht, kommen jedoch nur sehr selten vor. Sie werden zusammen mit den nicht Kategorisierten Abstimmungen unter “Übrige Mehrheiten” zusammengefasst.
+Weitere Koalitionen wie “Unheilige Allianzen” (SVP + SP), “Progressive Allianzen” (SP + FDP + Grüne + GLP) oder “Alle gegen die FDP” wurden ebenfalls untersucht, kommen jedoch nur sehr selten vor. Sie werden zusammen mit den nicht Kategorisierten Abstimmungen unter “Übrige Mehrheiten” zusammengefasst. 
 
 
 

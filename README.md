@@ -85,4 +85,4 @@ Weitere Koalitionen wie “Unheilige Allianzen” (SVP + SP), “Progressive All
 
 ## 3. Zusammenfassen der Koalitionen und Darstellung
 
---> [(GoogleSheet)](https://docs.google.com/spreadsheets/d/1DUT3gIYoZhuRYYhOSLtZ-6Gr6nIuJQsc37o8aPXWKmU/edit?usp=sharing)
+--> [(GoogleSheet)](https://docs.google.com/spreadsheets/d/1sM7g3MWWxTKQn3FLKHDximCd5snhy9MDKIG9DksEqFc/edit?usp=sharing)

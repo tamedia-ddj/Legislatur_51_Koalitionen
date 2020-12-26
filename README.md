@@ -31,7 +31,7 @@ Aus platzgründen sind diese csv files als Zip-Archiv hier hochgeladen.
 ## 2. Analyse der Koalitionen
 --> R-Script [2_Analyse.R](2_Analyse.R)
 
-Die Dateien votes_XX.csv aus dem vorhergehenden Schritt werden eingelesen und weiter aufbereitet. (Dieses Script kann ausgeführt werden, ohnde das vorhergehende Request-API script auszuführen, da alle relevanten Daten in diesem Github repo enthalten sind (im Zip-Archiv).
+Die Dateien votes_XX.csv aus dem vorhergehenden Schritt werden eingelesen und weiter aufbereitet. (Dieses Script kann ausgeführt werden, ohne das vorhergehende Request-API script auszuführen, da alle relevanten Daten in diesem Github repo enthalten sind (im Zip-Archiv).
 
 Es wurde untersucht, in welchen Koalitionen Mehrheitsverhältnisse zustande kamen. Alle Analysen wurden sowohl mit allen Abstimmungen gemacht, als auch nur mit den Schluss- und Gesamtabstimmungen.
 
